@@ -1,0 +1,17 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:FlipTab" x:Class="FlipTab.MainWindow"
+        Title="MainWindow" Height="144" Width="269" 
+        Loaded="Window_Loaded_1" 
+        SourceInitialized="WindowSourceInitialized" 
+        AllowsTransparency="True" 
+        WindowStyle="None" 
+        Background="Transparent" >
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-16,0,0">
+            <local:FlipT x:Name="HoursTab" Delay="0.3" Margin="0,0,10,0"/>
+            <local:FlipT x:Name="MinutesTab" Delay="0.2" Speed="0.7"/>
+        </StackPanel>
+    </Grid>
+</Window>
