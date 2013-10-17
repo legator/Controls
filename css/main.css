@@ -1,0 +1,240 @@
+body{
+    padding: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    color: #5b6064;
+    font-weight: 400;
+    background-color: #F9F9F9;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+    font-size: 52px;
+    color: #222;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+    color: #222;
+}
+
+h4 {
+    margin: 30px 0 15px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h5 {
+    margin: 30px 0 15px 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 10px;
+    float: none;
+}
+
+a {
+    color: #33B5E5;
+    font-style: italic;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #33B5E5;
+}
+
+a:active {
+    color: #FFFFFF;
+    background-color: #33B5E5;
+    text-decoration: none;
+}
+
+img.avatar {
+    float: right;
+    border: 0px solid #999;
+    width: 470px;
+    height: 88px;
+}
+
+.container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    margin: 0 0 5px;
+}
+
+p.blue {
+    margin-bottom: 10px;
+    float: none;
+    color: #33B5E5;
+}
+
+p.status {
+    margin: 20px 0 20px 0;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+p.foot{
+    margin-top:25px;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/*modify these values to change the size of the stage or the thumbs */
+.pika-stage{
+    width:600px;
+    height:350px;}
+
+.pika-thumbs li{
+    width: 100px;
+    height:55px;}
+
+.pikachoose-whiteout{
+    position:relative;
+    width:620px;
+    height:520px;
+    top:30px;
+    margin:0 auto;}
+
+.pika-stage{
+    padding:10px;}
+
+.pika-stage .pika-aniwrap{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index:9;}
+
+.pika-stage, .pika-thumbs li, .pika-stage .caption{
+    position: relative;
+    -webkit-box-shadow: 0px 0px 10px 0px #000000;
+    -moz-box-shadow: 0px 0px 10px 0px #000000;
+    box-shadow: 0px 0px 10px 0px #000000;}
+
+.pika-thumbs li{
+    -webkit-box-shadow: 0px 0px 9px -2px #000000;
+    -moz-box-shadow: 0px 0px 9px -2px #000000;
+    box-shadow: 0px 0px 9px -2px #000000;}
+
+.pika-stage .caption {
+    font-family: Rokkitt;
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 250px;
+    height: 31px;
+    padding: 7px;}
+
+.pika-stage .caption a{
+    color:black;}
+
+.pika-imgnav{display:none;}
+
+.pika-imgnav a{
+    position: absolute;
+    text-indent: -5000px;
+    height: 65px;
+    width: 55px;
+    display: block;
+    z-index:11;
+    background:url(controls.png) 0 0 no-repeat;
+    cursor:pointer;
+    top:10px;
+    right:28px;}
+
+.pika-imgnav .next, .pika-imgnav .previous{
+    top:160px;
+    background-position: 0 -160px;}
+
+.pika-imgnav .previous{
+    left:13px;
+    background-position: 0 -80px;}
+
+.pika-imgnav .play{
+   background-position:0 -240px;}
+
+
+
+.pika-thumbs li{
+    float:left;
+    list-style: none;
+    overflow:hidden;
+    margin:3px 10px;
+    padding:4px;}
+
+.pika-thumbs li .clip{
+    position:relative;
+    height:100%;
+    overflow: hidden;}
+
+.pika-textnav{display:none;}
+.pika-counter{display:none;}
+
+
+
+.jcarousel-clip-horizontal{
+    width:510px;
+    overflow:hidden;
+    left:47px;}
+
+.jcarousel-container{
+    position:relative;
+    width:600px;
+    padding-top:8px;
+    height:100px;
+    z-index:10;
+    overflow:hidden;
+    top:10px;
+    left:10px;}
+
+.jcarousel-prev,.jcarousel-next{
+    width:35px;
+    height:44px;
+    background:url(controls.png) top left no-repeat;
+    display:block;
+    position:absolute;
+    right:5px;
+    top:24px;
+    cursor:pointer;
+    opacity:0.6;}
+
+.jcarousel-prev:hover, .jcarousel-next:hover{
+    filter:alpha(opacity=100);
+    opacity:1.0;}
+
+.jcarousel-prev-disabled:hover, .jcarousel-next-disabled:hover, .jcarousel-next-disabled, .jcarousel-prev-disabled{
+    filter:alpha(opacity=30);
+    opacity:0.3;}
+
+.jcarousel-next{
+    background-position: -30px -310px;}
+
+.jcarousel-prev{
+    background-position: 0 -310px;
+    left:15px;}
